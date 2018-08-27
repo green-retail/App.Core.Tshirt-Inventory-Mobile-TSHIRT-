@@ -1,4 +1,5 @@
-﻿using System;
+﻿using App.Core.Tshirt.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,8 +14,10 @@ namespace App.Core.Tshirt
 		{
 			InitializeComponent();
 
-			MainPage = new App.Core.Tshirt.MainPage();
-		}
+			//MainPage = new App.Core.Tshirt.MainPage();
+
+            MainPage = new NavigationPage(new MainMenu("USER01"));
+        }
 
 		protected override void OnStart ()
 		{

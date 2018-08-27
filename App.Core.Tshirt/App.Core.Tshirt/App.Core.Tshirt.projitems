@@ -16,8 +16,99 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Infrastructure\EnumTShirt.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Models\CountPlan.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\CountPlanDetail.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\CountPlanDetailItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\OrderDetail.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\OrderDetailProduct.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\OrderReqDetailExtend.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\OrderReqExtend.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\OrderTShirt.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Output.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\OutputDetail.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Product.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ProductToTransfer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ProductTransfer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ProductTransferDetailExtend.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Provider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\RctExtendModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\TransferDetail.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\User.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ViewCountPlanDetailExtend.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ViewCountPlanDetailItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ViewCountPlanDetailPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ViewOrder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Warehouse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\WarehouseProduct.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Count\Plan.xaml.cs">
+      <DependentUpon>Plan.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Count\PlanDetails.xaml.cs">
+      <DependentUpon>PlanDetails.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Count\PlanList.xaml.cs">
+      <DependentUpon>PlanList.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Count\PlanResume.xaml.cs">
+      <DependentUpon>PlanResume.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\MainMenu.xaml.cs">
+      <DependentUpon>MainMenu.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Services\CountServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\OrderService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\OutputServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\ProductChangeServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\ProductServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\ProductTransferServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\ProviderService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\RctServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\SyncServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\UserServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\WarehouseServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\XmlServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\CountDetailViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\CountResumeViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\CountViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MenuItemViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Count\Plan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Count\PlanList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Count\PlanDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Count\PlanResume.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\MainMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>
